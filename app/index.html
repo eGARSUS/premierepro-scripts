@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GARSUS Prod — Blank Panel</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: #232324;
+        color: #e6e6e6;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+
+      #wrap {
+        padding: 16px;
+      }
+
+      h1 {
+        margin: 0 0 8px 0;
+        font-size: 18px;
+      }
+
+      .muted {
+        color: #9aa;
+        font-size: 12px;
+      }
+
+      .panel-menu {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      .panel-menu__item {
+        background: #2c2c2d;
+        border: 1px solid #363637;
+        border-radius: 4px;
+        color: inherit;
+        padding: 6px 12px;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        cursor: pointer;
+        transition: background 0.2s, border 0.2s;
+      }
+
+      .panel-menu__item:hover,
+      .panel-menu__item:focus {
+        background: #3c3c3d;
+        border-color: #4b4b4c;
+      }
+
+      .panel-menu__item--active {
+        background: linear-gradient(180deg, #3f3f40, #2b2b2c);
+        border-color: #5b5b5c;
+      }
+
+      .panel-content {
+        background: #1f1f20;
+        border: 1px solid #373738;
+        border-radius: 6px;
+        padding: 16px;
+      }
+
+      .panel-content p {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <nav class="panel-menu" aria-label="Основное меню панели">
+        <button class="panel-menu__item panel-menu__item--active" type="button">
+          Профиль
+        </button>
+        <button class="panel-menu__item" type="button">Проекты</button>
+        <button class="panel-menu__item" type="button">Синхронизация</button>
+        <button class="panel-menu__item" type="button">Настройки</button>
+      </nav>
+      <section class="panel-content">
+        <h1>GARSUS Prod — Blank Panel</h1>
+        <p>
+          Чистая панель на основе HTML/JS, без подключения JSX. Элементы меню
+          отражают внешний вид, совпадающий с примерами Premiere Pro.
+        </p>
+        <p class="muted">
+          Продолжим настройку функционала после утверждения дизайна.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

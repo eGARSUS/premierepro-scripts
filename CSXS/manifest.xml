@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.garsus.sync.panel" ExtensionBundleVersion="1.0.0" ExtensionBundleName="GARSUS Prod">
+  <ExtensionList>
+    <Extension Id="com.garsus.sync.panel" Version="1.0.0"/>
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="PPRO" Version="23.0"/>
+      <Host Name="PPRO" Version="23.9"/>
+    </HostList>
+    <LocaleList>
+      <Locale Code="All"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="11.0"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="com.garsus.sync.panel">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>app/index.html</MainPath>
+          <ScriptPath>jsx/host.jsx</ScriptPath>
+          <CEFCommandLine/>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>GARSUS Prod</Menu>
+          <Geometry>
+            <Size>
+              <Height>520</Height>
+              <Width>680</Width>
+            </Size>
+            <MinSize>
+              <Height>400</Height>
+              <Width>480</Width>
+            </MinSize>
+          </Geometry>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>

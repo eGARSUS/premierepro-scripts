@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>GARSUS Prod Sync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GARSUS Prod — Синхронизация</h1>
+    </header>
+
+    <section class="global-settings">
+      <label for="defaultReplayLen">Default Replay length (sec)</label>
+      <input type="number" id="defaultReplayLen" min="1" value="600" />
+      <label class="mute-toggle">
+        <input type="checkbox" id="muteBeforeInsert" />
+        Mute V1–V3/A1–A9 перед вставкой
+      </label>
+    </section>
+
+    <section class="track-block" data-track="0">
+      <h2>Видеодорожка V1</h2>
+      <div class="controls">
+        <button class="sync-btn" data-track="0">Синхронизировать V1</button>
+        <label>
+          <input type="checkbox" class="start-as-begin" data-track="0" checked />
+          Начало
+        </label>
+        <label>
+          Сдвиг времени (±HH:MM:SS)
+          <input type="text" class="offset" data-track="0" placeholder="+00:00:00" value="+00:00:00" />
+        </label>
+      </div>
+    </section>
+
+    <section class="track-block" data-track="1">
+      <h2>Видеодорожка V2</h2>
+      <div class="controls">
+        <button class="sync-btn" data-track="1">Синхронизировать V2</button>
+        <label>
+          <input type="checkbox" class="start-as-begin" data-track="1" />
+          Начало
+        </label>
+        <label>
+          Сдвиг времени (±HH:MM:SS)
+          <input type="text" class="offset" data-track="1" placeholder="+00:00:00" value="+00:00:00" />
+        </label>
+      </div>
+    </section>
+
+    <section class="track-block" data-track="2">
+      <h2>Видеодорожка V3</h2>
+      <div class="controls">
+        <button class="sync-btn" data-track="2">Синхронизировать V3</button>
+        <label>
+          <input type="checkbox" class="start-as-begin" data-track="2" />
+          Начало
+        </label>
+        <label>
+          Сдвиг времени (±HH:MM:SS)
+          <input type="text" class="offset" data-track="2" placeholder="+00:00:00" value="+00:00:00" />
+        </label>
+      </div>
+    </section>
+
+    <section class="log-section">
+      <h2>Лог</h2>
+      <pre id="log"></pre>
+    </section>
+  </div>
+
+  <script src="js/lib/CSInterface.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
